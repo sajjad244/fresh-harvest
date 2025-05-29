@@ -1,9 +1,10 @@
 import Footer from "../../Components/Footer";
+import HeroSection from "../../Components/HeroSection";
 
 const Home = () => {
   return (
     <div>
-      <h1>from home</h1>
+      <HeroSection></HeroSection>
       <Footer />
     </div>
   );
