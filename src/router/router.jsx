@@ -10,10 +10,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: () => fetch("https://code-commando.com/api/v1/products"),
       },
       {
-        path: "/about",
-        element: <h1>About</h1>,
+        path: "/shop",
+        element: <h1>Shop</h1>,
       },
       {
         path: "/contact",
