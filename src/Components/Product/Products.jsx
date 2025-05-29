@@ -6,8 +6,6 @@ const Products = () => {
   const {data: products} = useLoaderData();
   const [loading, setLoading] = useState(true);
 
-  console.log(products);
-
   useEffect(() => {
     if (products) {
       setLoading(false);
@@ -15,7 +13,7 @@ const Products = () => {
   }, [products]);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold text-center mb-3">
         Our Fresh Products
       </h1>
@@ -23,14 +21,13 @@ const Products = () => {
         We pride ourselves on offering a wide variety of fresh and flavorful
         fruits, vegetables, and salad ingredients.
       </p>
-
       {loading ? (
         <div className="flex justify-center py-10">
           <span className="loading loading-spinner loading-lg"></span>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products.map((product) => (
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {products.slice(0, 8).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
