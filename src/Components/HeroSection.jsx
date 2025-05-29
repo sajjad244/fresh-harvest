@@ -1,4 +1,4 @@
-import bannerGirl from "../../src/assets/girl1.png";
+import vegetable from "../../src/assets/vegetable.jpg";
 // import saladOffer from "../../src/assets/salad.png";
 import banner from "../../src/assets/bannerGirl.png";
 import {useLocation} from "react-router-dom";
@@ -38,7 +38,7 @@ const HeroSection = () => {
             {/* Offer Card */}
             <div className="mt-4 ml-32 flex items-center gap-3 p-3 rounded-md shadow bg-white w-fit">
               <img
-                src={bannerGirl}
+                src={vegetable}
                 alt="Salad"
                 className="w-12 h-12 rounded-full object-cover"
               />

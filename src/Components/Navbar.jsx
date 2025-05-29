@@ -16,10 +16,7 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div className="navbar-start">
-        <Link
-          to="/"
-          className="btn btn-ghost text-xl font-bold text-black normal-case"
-        >
+        <Link to="/" className="btn btn-ghost text-2xl font-bold text-black ">
           Fresh Harvests
         </Link>
       </div>
@@ -34,18 +31,48 @@ const Navbar = () => {
           <NavLink
             className={({isActive}) =>
               `font-semibold ${
-                isActive ? "text-warning" : "hover:text-warning"
+                isActive ? "text-gray-600 underline" : "text-gray-600"
               } `
             }
             to="/"
           >
             Home
           </NavLink>
+          <NavLink
+            className={({isActive}) =>
+              `font-semibold ${
+                isActive ? "text-gray-600 underline" : "text-gray-600"
+              } `
+            }
+            to="/shop"
+          >
+            Shop
+          </NavLink>
+          <NavLink
+            className={({isActive}) =>
+              `font-semibold ${
+                isActive ? "text-gray-600 underline" : "text-gray-600"
+              } `
+            }
+            to="/about"
+          >
+            About us
+          </NavLink>
+          <NavLink
+            className={({isActive}) =>
+              `font-semibold ${
+                isActive ? "text-gray-600 underline" : "text-gray-600"
+              } `
+            }
+            to="/blog"
+          >
+            Blog
+          </NavLink>
         </ul>
       </div>
 
       {/* Right side (cart + heart + burger menu on small screen) */}
-      <div className="navbar-end space-x-3">
+      <div className="navbar-end space-x-4">
         {/* Cart Icon */}
         <div className="relative">
           <FaShoppingCart size={24} />
@@ -55,12 +82,16 @@ const Navbar = () => {
         </div>
 
         {/* Heart Icon */}
-        <div className="relative">
+        <div className="relative hidden md:block ">
           <IoMdHeart size={24} />
           <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full text-xs px-1">
             {favoriteItems.length}
           </span>
         </div>
+        {/* sign in  */}
+        <Link className="hidden md:block" to={"/login"}>
+          <button className="btn border border-black">Sign in</button>
+        </Link>
 
         {/* Burger Menu (mobile only) */}
         <div className="dropdown dropdown-end lg:hidden">
@@ -89,14 +120,53 @@ const Navbar = () => {
             <NavLink
               className={({isActive}) =>
                 `font-semibold ${
-                  isActive ? "text-warning" : "hover:text-warning"
-                }`
+                  isActive ? "text-gray-600 underline" : "text-gray-600"
+                } `
               }
               to="/"
             >
               Home
             </NavLink>
-            {/* Add more NavLinks here if needed */}
+            <NavLink
+              className={({isActive}) =>
+                `font-semibold ${
+                  isActive ? "text-gray-600 underline" : "text-gray-600"
+                } `
+              }
+              to="/shop"
+            >
+              Shop
+            </NavLink>
+            <NavLink
+              className={({isActive}) =>
+                `font-semibold ${
+                  isActive ? "text-gray-600 underline" : "text-gray-600"
+                } `
+              }
+              to="/about"
+            >
+              About us
+            </NavLink>
+            <NavLink
+              className={({isActive}) =>
+                `font-semibold ${
+                  isActive ? "text-gray-600 underline" : "text-gray-600"
+                } `
+              }
+              to="/blog"
+            >
+              Blog
+            </NavLink>
+            <NavLink
+              className={({isActive}) =>
+                `font-semibold ${
+                  isActive ? "text-gray-600 underline" : "text-gray-600"
+                } `
+              }
+              to="/login"
+            >
+              Sign in
+            </NavLink>
           </ul>
         </div>
       </div>
