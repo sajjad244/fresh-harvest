@@ -6,7 +6,7 @@ A fully functional and responsive frontend application for an online grocery pla
 
 ## 🎨 Live Demo
 
-🔗 [View Live Site](https://your-deployment-url.com)
+🔗 [View Live Site](https://fresh-harvest-kappa.vercel.app/)
 
 ---
 
@@ -14,7 +14,6 @@ A fully functional and responsive frontend application for an online grocery pla
 
 - ✅ Fully responsive design across all screen sizes.
 - 🎯 All components & pages implemented exactly as per Figma design.
-- 🔌 API integrated using **Redux Toolkit Query (RTK Query)**.
 - 🛒 Cart and Favorites with LocalStorage support.
 - 🔐 Modal-based authentication (Sign In).
 - 🚀 Optimized for performance and clean UI.
@@ -26,7 +25,6 @@ A fully functional and responsive frontend application for an online grocery pla
 - **React.js**
 - **Tailwind CSS**
 - **React Router DOM**
-- **Redux Toolkit + RTK Query**
 - **React Icons**
 - **Vite**
 
@@ -137,4 +135,4 @@ This project is licensed under the MIT License.
 ## ✨ Credits
 
 - Designed as per custom **Figma UI**
-- Developed by **[Your Name]**
+- Developed by **[Sajjad Hosssain Sabbir]**
