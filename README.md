@@ -71,15 +71,7 @@ cd fresh-harvest-frontend
 npm install
 ```
 
-### 3. Environment Variables (if any)
-
-If required, create a `.env` file in the root with your API base URL or keys:
-
-```env
-VITE_API_URL=https://code-commando.com/api/v1
-```
-
-### 4. Run Locally
+### 3. Run Locally
 
 ```bash
 npm run dev
