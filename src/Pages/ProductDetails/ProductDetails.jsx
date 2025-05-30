@@ -39,7 +39,7 @@ const ProductDetails = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-10 text-center">
+      <h1 className="text-4xl font-bold mb-12 text-center">
         {product.productName}
       </h1>
 
