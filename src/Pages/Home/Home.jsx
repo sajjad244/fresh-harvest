@@ -1,13 +1,11 @@
-import Footer from "../../Components/Footer";
 import HeroSection from "../../Components/HeroSection";
 import Products from "../../Components/Product/Products";
 
 const Home = () => {
   return (
-    <div>
+    <div className="contain mx-auto">
       <HeroSection />
       <Products></Products>
-      <Footer />
     </div>
   );
 };

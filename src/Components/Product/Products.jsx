@@ -21,6 +21,20 @@ const Products = () => {
         We pride ourselves on offering a wide variety of fresh and flavorful
         fruits, vegetables, and salad ingredients.
       </p>
+      <div className="flex justify-center gap-4 mb-6">
+        <button className="btn btn-outline hover:bg-green-500 hover:text-white">
+          All
+        </button>
+        <button className="btn btn-outline hover:bg-green-500 hover:text-white">
+          Fruits
+        </button>
+        <button className="btn btn-outline hover:bg-green-500 hover:text-white">
+          Vegetables
+        </button>
+        <button className="btn btn-outline hover:bg-green-500 hover:text-white">
+          Salad
+        </button>
+      </div>
       {loading ? (
         <div className="flex justify-center py-10">
           <span className="loading loading-spinner loading-lg"></span>

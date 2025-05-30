@@ -13,7 +13,7 @@ const ProductCard = ({product}) => {
       <div className="mt-4">
         <h2 className="text-lg font-semibold">{product.productName}</h2>
         <p className="text-sm text-gray-600">${product.price}/kg</p>
-        <Link to={`/products/${product.id}`}>
+        <Link to={`/product/${product.id}`}>
           <button className="btn btn-outline btn-sm w-full mt-2 hover:bg-orange-500 hover:text-white transition-all duration-300">
             Add to cart
           </button>
