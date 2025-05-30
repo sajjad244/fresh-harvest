@@ -2,11 +2,18 @@ import {FaShoppingCart} from "react-icons/fa";
 import {IoMdHeart} from "react-icons/io";
 import {Link, NavLink, useLocation} from "react-router-dom";
 
+import {useState} from "react";
+import SignInModal from "./Modal/SignInModal";
+
 const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
   const favoriteItems = JSON.parse(localStorage.getItem("favorite")) || [];
+  // modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <div
@@ -91,8 +98,12 @@ const Navbar = () => {
           </span>
         </div>
         {/* sign in  */}
-        <Link className="hidden md:block" to={"/login"}>
-          <button className="btn border border-black">Sign in</button>
+        {/*  */}
+        {/*  */}
+        <Link className="hidden md:block">
+          <button onClick={openModal} className="btn border border-black">
+            Sign in
+          </button>
         </Link>
 
         {/* Burger Menu (mobile only) */}
@@ -160,18 +171,21 @@ const Navbar = () => {
               Blog
             </NavLink>
             <NavLink
+              onClick={openModal}
               className={({isActive}) =>
                 `font-semibold ${
                   isActive ? "text-gray-600 underline" : "text-gray-600"
                 } `
               }
-              to="/login"
+              to="/#"
             >
               Sign in
             </NavLink>
           </ul>
         </div>
       </div>
+      {/* Modal Component */}
+      <SignInModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
