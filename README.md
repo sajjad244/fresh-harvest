@@ -6,7 +6,7 @@ A fully functional and responsive frontend application for an online grocery pla
 
 ## 🎨 Live Demo
 
-🔗 [View Live Site](https://fresh-harvest-kappa.vercel.app/)
+🔗 [View Live Site](https://fresh-harvest-sajjads-projects-29b9aa03.vercel.app/)
 
 ---
 
