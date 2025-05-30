@@ -1,24 +1,18 @@
 import vegetable from "../../src/assets/vegetable.jpg";
-// import saladOffer from "../../src/assets/salad.png";
 import banner from "../../src/assets/bannerGirl.png";
-import {useLocation} from "react-router-dom";
 
 const HeroSection = () => {
-  const location = useLocation();
-  const isHomePage = location.pathname === "/";
   return (
     <section
-      className={`relative w-full max-h-screen bg-cover bg-center bg-no-repeat  mt-44 ${
-        isHomePage ? "-top-60" : ""
-      }`}
+      className="relative w-full bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${banner})`,
       }}
     >
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 md:px-8 pt-12 lg:pt-20 pb-24 lg:pb-32 relative z-10">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 md:px-8 pt-24 lg:pt-32 pb-24 lg:pb-32 relative z-10">
         {/* Left Text Content */}
         <div className="flex-1 space-y-6 text-left">
-          <p className="text-sm md:text-base text-green-700 bg-green-200 inline-block  p-0.5 font-medium">
+          <p className="text-sm md:text-base text-green-700 bg-green-200 inline-block p-1 font-medium">
             Welcome to Fresh Harvest
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -34,7 +28,7 @@ const HeroSection = () => {
           </button>
 
           {/* Offer Card */}
-          <div className="mt-4 ml-32 flex items-center gap-3 p-3 rounded-md shadow bg-white w-fit">
+          <div className="mt-6 flex items-center gap-3 p-3 rounded-md shadow bg-white w-fit">
             <img
               src={vegetable}
               alt="Salad"

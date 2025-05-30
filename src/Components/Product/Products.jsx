@@ -13,7 +13,7 @@ const Products = () => {
   }, [products]);
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 mt-16">
       <h1 className="text-4xl font-bold text-center mb-3">
         Our Fresh Products
       </h1>

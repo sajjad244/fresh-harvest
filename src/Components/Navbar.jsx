@@ -10,8 +10,10 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar container   mx-auto ${
-        isHomePage ? "relative z-30 " : ""
+      className={`navbar container mx-auto ${
+        isHomePage
+          ? "absolute top-0 left-0 right-0 z-50 text-white"
+          : "relative"
       }`}
     >
       {/* Logo */}
@@ -75,7 +77,7 @@ const Navbar = () => {
       <div className="navbar-end space-x-4">
         {/* Cart Icon */}
         <div className="relative">
-          <FaShoppingCart size={24} />
+          <FaShoppingCart size={24} className="text-black" />
           <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full text-xs px-1">
             {cartItems.length}
           </span>
@@ -83,7 +85,7 @@ const Navbar = () => {
 
         {/* Heart Icon */}
         <div className="relative hidden md:block ">
-          <IoMdHeart size={24} />
+          <IoMdHeart size={24} className="text-black" />
           <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full text-xs px-1">
             {favoriteItems.length}
           </span>
@@ -94,7 +96,7 @@ const Navbar = () => {
         </Link>
 
         {/* Burger Menu (mobile only) */}
-        <div className="dropdown dropdown-end lg:hidden">
+        <div className="dropdown dropdown-end lg:hidden text-black">
           <div tabIndex={0} role="button" className="btn btn-ghost p-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
