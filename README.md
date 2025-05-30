@@ -1,12 +1,140 @@
-# React + Vite
+# 🥕 Fresh Harvest – Online Grocery Store (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional and responsive frontend application for an online grocery platform built using **React.js** and **Tailwind CSS**, integrated with external APIs as per design specifications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎨 Live Demo
 
-## Expanding the ESLint configuration
+🔗 [View Live Site](https://your-deployment-url.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Features
+
+- ✅ Fully responsive design across all screen sizes.
+- 🎯 All components & pages implemented exactly as per Figma design.
+- 🔌 API integrated using **Redux Toolkit Query (RTK Query)**.
+- 🛒 Cart and Favorites with LocalStorage support.
+- 🔐 Modal-based authentication (Sign In).
+- 🚀 Optimized for performance and clean UI.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React.js**
+- **Tailwind CSS**
+- **React Router DOM**
+- **Redux Toolkit + RTK Query**
+- **React Icons**
+- **Vite**
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── SignInModal.jsx
+│   └── ...
+├── pages/
+│   ├── Home.jsx
+│   ├── Shop.jsx
+│   └── ...
+├── layouts/
+│   └── MainLayout.jsx
+├── app/
+│   └── store.js
+├── features/
+│   └── apiSlice.js
+├── assets/
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/fresh-harvest-frontend.git
+cd fresh-harvest-frontend
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Environment Variables (if any)
+
+If required, create a `.env` file in the root with your API base URL or keys:
+
+```env
+VITE_API_URL=https://code-commando.com/api/v1
+```
+
+### 4. Run Locally
+
+```bash
+npm run dev
+```
+
+App will run on: `http://localhost:5173`
+
+---
+
+## 🧱 Build for Production
+
+```bash
+npm run build
+```
+
+Then preview the build using:
+
+```bash
+npm run preview
+```
+
+---
+
+## 📦 Deployment
+
+You can deploy this app on any static hosting provider:
+
+- **Vercel**
+- **Netlify**
+- **Firebase Hosting**
+
+### Example with Vercel:
+
+1. Push your code to GitHub.
+2. Go to [vercel.com](https://vercel.com) and import the repo.
+3. Set environment variables if needed.
+4. Click **Deploy**.
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.
+
+---
+
+## 📃 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ✨ Credits
+
+- Designed as per custom **Figma UI**
+- Developed by **[Your Name]**
